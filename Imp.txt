@@ -5,6 +5,7 @@
 							Prettier
 							-------------
 5. Create the react app now, go the folder where you wanna create the app and then: create-react-app react-app
+6. to run command is: npm start
 
 
 
