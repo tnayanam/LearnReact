@@ -6,9 +6,9 @@
 
 
 function sayHello(){
-    for(var i = 0 ; i < 5; i++)
+    for(let i = 0 ; i < 5; i++)
     console.log(i);
-    console.log(i); // this prints 5 because in javascript the scope of A var keyword is not just limited to that loop. scope is for the entire function in which it is declared.
+    console.log(i); // now here we are getting error as i is not defined. so scope of i is limited the loop 
 }
 
 sayHello();
