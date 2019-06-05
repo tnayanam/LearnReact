@@ -1,1 +1,10 @@
-download node from this link: https://nodejs.org/en/
+1. download node from this link: https://nodejs.org/en/
+2. Download react package: npm i -g create-react-app@1.5.2
+3. downlaod vs code
+4. install two extensions : Simple React Snippets
+							Prettier
+							-------------
+5. Create the react app now, go the folder where you wanna create the app and then: create-react-app react-app
+
+
+
