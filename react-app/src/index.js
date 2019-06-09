@@ -7,7 +7,7 @@ const person = {
 
 person.walk(); // here this returns the actual object
 
-var test = person.walk;
+var test = person.walk.bind(person);
 
 test(); //here this returns the windows object
 
