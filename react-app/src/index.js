@@ -1,9 +1,21 @@
-// Array.map function
+// Object Destructuring
 
-const colours = ['Red', 'Green', 'Blue'];
-const item1 = colours.map(color => '<li>' + color + '</li>'); // one way
-const item2 = colours.map(color => `<li>${color}</li>`); // another way
+const address =  {
+street: '',
+city:'',
+country:''
+};
 
-console.log(item1);
+// bad way
+// const street = address.street;
+// const city = address.city;
+// const country = address.country;
+//---------------------------
+// const  {street, city, country} = address; 
+// ------------------------------
+// const  {street} = address;
 
-console.log(item2);
+// ----------------------------
+const{street: st} = address;
+
+
