@@ -1,14 +1,18 @@
-const person = {
-    name: "Mosh",
-    walk(){
-            console.log(this);
-    }
-};
+const square = number => number * number;
 
-person.walk(); // here this returns the actual object
+console.log(square(4));
 
-var test = person.walk.bind(person);
 
-test(); //here this returns the windows object
+const jobs =[
+    {id: 1, IsActive : true},
+        {id: 2, IsActive : true},
+        {id: 3, IsActive : true},
+        {id: 4, IsActive : false
+        }];
+
+const activejobs = jobs.filter(job=> job.IsActive);
+
+console.log(activejobs);
+
 
 
