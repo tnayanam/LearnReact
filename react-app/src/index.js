@@ -1,18 +1,9 @@
-const square = number => number * number;
+// Array.map function
 
-console.log(square(4));
+const colours = ['Red', 'Green', 'Blue'];
+const item1 = colours.map(color => '<li>' + color + '</li>'); // one way
+const item2 = colours.map(color => `<li>${color}</li>`); // another way
 
+console.log(item1);
 
-const jobs =[
-    {id: 1, IsActive : true},
-        {id: 2, IsActive : true},
-        {id: 3, IsActive : true},
-        {id: 4, IsActive : false
-        }];
-
-const activejobs = jobs.filter(job=> job.IsActive);
-
-console.log(activejobs);
-
-
-
+console.log(item2);
