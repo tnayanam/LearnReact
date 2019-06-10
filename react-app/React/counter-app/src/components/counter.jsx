@@ -2,19 +2,20 @@ import React, { Component } from "react";
 
 class Counter extends Component {
   state = {
-    count: 0
+    count: 0,
   };
   render() {
     return (
       <React.Fragment>
         <span style={{ fontSize: 10, fontWeight: "bold" }}className={this.getBadgeClasses()}>{this.formatCount()}</span>
-        <button onClick = {this.handleIncrement} className="btn btn-secondary btn-sm">Increment</button> 
+        <button onClick = {() => this.handleIncrement(product)} className="btn btn-secondary btn-sm">Increment</button> 
         {/* since we are using function reference this.handleIncrement so we cannot pass argument, in order to pass argument we would need to do things differetly coz we cannot use this.handleIncrement (some value) */}
       </React.Fragment>
     );
   }
 
-  handleIncrement = () => {
+  handleIncrement = product => {
+      console.log(product);
       this.setState({count: this.state.count + 1})
   }
 
