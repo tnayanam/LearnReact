@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { thisExpression } from "@babel/types";
 
 class Counter extends Component {
   state = {
@@ -7,6 +8,7 @@ class Counter extends Component {
   render() {
     return (
       <React.Fragment>
+        {this.props.children}
         <span
           style={{ fontSize: 10, fontWeight: "bold" }}
           className={this.getBadgeClasses()}
