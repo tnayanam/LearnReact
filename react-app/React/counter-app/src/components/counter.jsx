@@ -20,7 +20,8 @@ class Counter extends Component {
         >
           Increment
         </button>
-        {/* since we are using function reference this.handleIncrement so we cannot pass argument, in order to pass argument we would need to do things differetly coz we cannot use this.handleIncrement (some value) */}
+        <button onClick={this.props.onDelete} className="btn btn-danger btn-sm m-2">Delete</button>
+       
       </React.Fragment>
     );
   }
@@ -42,3 +43,5 @@ class Counter extends Component {
 }
 
 export default Counter;
+
+// event is getting triggered from the child component (counter.jsx delete button) but they will be handlede in the main counters.jsx.
