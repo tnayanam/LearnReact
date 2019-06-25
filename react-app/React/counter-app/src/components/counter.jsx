@@ -18,6 +18,13 @@ class Counter extends Component {
         >
           Increment
         </button>
+        <button
+          onClick={()=>this.props.onDecrement(this.props.counter)}
+          className="btn btn-secondary btn-sm"
+          disabled = {this.props.counter.value === 0 ? 'disabled':''}
+        >
+          Decrement
+        </button>
         <button onClick={() => this.props.onDelete(this.props.counter.id)} className="btn btn-danger btn-sm m-2">Delete</button>
        
       </React.Fragment>
