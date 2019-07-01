@@ -27,7 +27,7 @@ class Movies extends Component {
     const movies = this.state.movies.filter(m => m._id !== movie._id);
     this.setState({ movies: movies });
   };
-  
+
   render() {
     const { length: count } = this.state.movies;
     if (count === 0) return <p>There are no movies in thedatabase</p>;
@@ -68,7 +68,7 @@ class Movies extends Component {
             ))}
           </tbody>
         </table>
-        <Pagination itemsCount = {count} pageSize={this.state.pageSize} onPageChange={this.handlePageChange}/>
+        <Pagination itemsCount = {count} pageSize={10} onPageChange={this.handlePageChange}/>
       </React.Fragment>
     );
   }
